@@ -78,7 +78,7 @@ if len(student_encoding) > 0:
     matches = fr.compare_faces(class_encodings_1, student_encoding[0])
 
     if True in matches:
-        print("Student3 - Present")
+        print("Student4 - Present")
         count += 1
 
         for i, match in enumerate(matches):
@@ -86,7 +86,7 @@ if len(student_encoding) > 0:
                 top, right, bottom, left = location[i]
                 draw.rectangle(((left, top), (right, bottom)),outline="green", width=3)
     else:
-        print("Student3 - Absent")
+        print("Student4 - Absent")
 
 print("Students Present:", count, "out of 4")
 
